@@ -494,3 +494,98 @@ body.light-theme .navbar-toggler-icon {
     color: var(--muted);
     font-size: 0.82rem;
 }
+
+.project-filters {
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 9px 17px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.filter-btn:hover {
+    background: var(--accent-2);
+    color: white;
+    border-color: var(--accent-2);
+}
+
+.project-card {
+    height: 100%;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.project-card > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.project-card:hover > img {
+    transform: scale(1.04);
+}
+
+.project-body {
+    padding: 22px;
+}
+
+.project-category {
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.project-body h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.project-body p {
+    min-height: 52px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.project-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.project-footer a {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    background: var(--surface-2);
+    border-radius: 50%;
+    color: var(--accent);
+}
+
+.project-footer a:hover {
+    background: var(--accent-2);
+    color: #fff;
+}
